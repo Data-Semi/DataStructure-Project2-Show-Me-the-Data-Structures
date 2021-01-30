@@ -54,7 +54,7 @@ class BlockChain(object):
         return out
 
 def main():
-    # Test Case 1 normal uses
+    # Test Case 1: Normal uses
     bl = BlockChain()
     data1 = "Data: First Blockchain block"
     data2 = "Data: Second Blockchain block"
@@ -66,13 +66,13 @@ def main():
     for lists in bl.toList(): # Print block chain
          print(lists)
             
-    # Test Case 2 no data has been passed
+    # Test Case 2: No data has been passed
     bl1 = BlockChain()
     bl1.appendBlock("")
     bl1.appendBlock("")
     print(bl1.toList())  # empty block chain
     
-    #Test Case 3 no data has been passed
+    #Test Case 3: No data has been passed
     bl2 = BlockChain()
     bl2.appendBlock(None)
     bl2.appendBlock(None)

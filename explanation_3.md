@@ -2,6 +2,14 @@
 ### Methods
 I wrote a test function to see whether the input string is restored after go through the encode function and the decode function.  
 
+### Tests
+Tests includes below:  
+Test case 1, edge case: The input string has only 1 type of letter  
+Test case 2, edge case: The input string includes no letter  
+Test case 3, edge case: The input string includes continuously duplicated letter  
+Test case 4: Original problem's example string  
+
+## Time complextity
 The reason I chose priority queue data structure in encoding method `huffman_encoding(string)` is because a priority queue has time complexity O(logn). It is much more small than sorting a dictionary has time complexity O(n).  
 
 To make the program readable, I have used string class to store the above program's encoded string.  

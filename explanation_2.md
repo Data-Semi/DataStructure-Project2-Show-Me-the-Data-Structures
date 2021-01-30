@@ -4,6 +4,13 @@ This program can find all files under a directory (and all directories beneath i
 The method `find_files(suffix, path)`is used recursively. Everytime found a subdirectory it will recursively call itself, otherwise it will judge whether the path macth the inputed suffix or not.  
 Every matched path will append to the path list as output.  
 
+### Tests
+Tests includes below:  
+Test case 1: Find *.c files  
+Test case 2: Find *.h files  
+Test case 3: Edge case, list all files inside the derectory  
+Test case 4: Edge case, there is no such directory  
+
 ## Time complextity
 All operation takes O(1) and a for-loop inside `find_files(suffix, path)` enumelates subdirectoties in inputed path, the time complexity is O(n).  
 Therefor, The total time complexity is O(n).

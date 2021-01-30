@@ -6,7 +6,7 @@ If there is a subgroup inside a group, the method `is_user_in_group()` will call
 The method `print_group_structure()` is helper method. It prints out full pathes of every folder and file in the inputed group.  
 
 ### Tests
-Tests includes as below:   
+Tests includes below:   
 Test case 1: The user is inside the group  
 Test case2: The user is not inside the group  
 Test case3: No user to find  

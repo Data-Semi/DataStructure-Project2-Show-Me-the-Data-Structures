@@ -164,7 +164,7 @@ def test_function(func_return, expected_result):
         print("fail")
         print("The function returned llist: ", func_return)
 
-# Test case 1
+# Test case 1: Normal use
 linked_list_1 = LinkedList()
 linked_list_2 = LinkedList()
 
@@ -180,8 +180,7 @@ for i in element_2:
 test_function(union(linked_list_1,linked_list_2), [2, 3, 3, 35, 65, 1, 1, 4, 6, 6, 9, 11, 21, 32])
 test_function(intersection(linked_list_1,linked_list_2), [4, 6, 6, 21])   
 
-# Test case 2
-# edge case: No intersection
+# Test case 2, edge case: No intersection
 
 linked_list_3 = LinkedList()
 linked_list_4 = LinkedList()
@@ -198,8 +197,7 @@ for i in element_2:
 test_function(union(linked_list_3,linked_list_4), [3, 2, 4, 35, 6, 65, 6, 4, 3, 23, 1, 7, 8, 9, 11, 21, 1])
 test_function(intersection(linked_list_3,linked_list_4), [])
 
-# Test case 3
-# edge case: input an empty llist
+# Test case 3, edge case: Input an empty llist
 
 linked_list_5 = LinkedList()
 linked_list_6 = LinkedList()

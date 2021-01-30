@@ -1,6 +1,6 @@
 ## Program structure
 ### Methods
-This program Assume that the input sets A and B only includes numbers which can compared by `>, <`. 
+This program Assume that the input sets A and B only includes numbers which can compared by `>, <`.  
 
 ## Time Coplexity
 For save searching time, I choose to use ordered linked list. The method `addNode_acceding_order()` has one loop, therefore, the Big O is O(n).  

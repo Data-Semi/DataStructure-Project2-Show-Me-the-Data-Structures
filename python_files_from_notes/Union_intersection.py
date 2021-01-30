@@ -1,3 +1,23 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# ## Union and Intersection of Two Linked Lists
+# ### problem description  
+# Your task for this problem is to fill out the union and intersection functions.  
+# The union of two sets A and B is the set of elements which are in A, in B, or in both A and B. The intersection of two sets A and B, denoted by A ∩ B, is the set of all objects that are members of both the sets A and B.  
+# 
+# You will take in two linked lists and return a linked list that is composed of either the union or intersection, respectively.  
+# Once you have completed the problem you will create your own test cases and perform your own run time analysis on the code.  
+
+# ### Analysis
+# Assume that the input sets A and B only includes numbers which can be sorted.   
+# For save searching time, I choose to use ordered linked list. The method addNode_acceding_order() has one loop, therefore, the Big O is O(n).  
+# The ordered linked list allowes me to stop search before reach to the end of linked list, but it didn't change the time complexity. Both of the method union() and intersection() has two loops, therefor, the Big O is O(n^2).  
+# Therefore, This program has time complexity O(n^2 + n).  
+
+# In[66]:
+
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -156,6 +176,10 @@ def intersection(llist_1, llist_2):
 
     return intersection_list
 
+
+# In[67]:
+
+
 def test_function(func_return, expected_result):
     if (func_return.to_list() == expected_result):
         print("pass")
@@ -164,7 +188,12 @@ def test_function(func_return, expected_result):
         print("fail")
         print("The function returned llist: ", func_return)
 
+
+# In[68]:
+
+
 # Test case 1
+
 linked_list_1 = LinkedList()
 linked_list_2 = LinkedList()
 
@@ -172,9 +201,11 @@ element_1 = [3,2,4,35,6,65,6,4,3,21]
 element_2 = [6,32,4,9,6,1,11,21,1]
 
 for i in element_1:
+    #linked_list_1.append(i)
     linked_list_1.addNode_acceding_order(i)
 
 for i in element_2:
+    #linked_list_2.append(i)
     linked_list_2.addNode_acceding_order(i)
 
 test_function(union(linked_list_1,linked_list_2), [2, 3, 3, 35, 65, 1, 1, 4, 6, 6, 9, 11, 21, 32])
@@ -198,6 +229,10 @@ for i in element_2:
 test_function(union(linked_list_3,linked_list_4), [3, 2, 4, 35, 6, 65, 6, 4, 3, 23, 1, 7, 8, 9, 11, 21, 1])
 test_function(intersection(linked_list_3,linked_list_4), [])
 
+
+# In[72]:
+
+
 # Test case 3
 # edge case: input an empty llist
 
@@ -215,3 +250,4 @@ for i in element_2:
 
 test_function(union(linked_list_5,linked_list_6), [1, 3, 2])
 test_function(intersection(linked_list_4,linked_list_5), [])
+

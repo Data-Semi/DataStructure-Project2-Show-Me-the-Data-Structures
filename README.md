@@ -1,8 +1,8 @@
 # DataStructure-Project2-Show-Me-the-Data-Structures  
-This is 2nd project of Udacity's Data Structures & Algorithms Nanodegree Program.  
-I have used data structure like Linked List, Recursion, Priority queue, Queue in this project.
+This is the 2nd project of Udacity's Data Structures & Algorithms Nanodegree Program.  
+I have used data structures like Linked List, Recursion, Priority queue, Queue in this project.
 
-I have wrote 6 set of files to answer 6 problems as below.
+I have written 6 sets of files to answer 6 problems as below.
 
 1. LRU Cashe problem  
 problem_1.py, explanation_1.md
@@ -24,11 +24,11 @@ problem_6.py, explanation_6.md
 
 ### Description of the solutions
 
-The description of 6 problems is included in each jupyter notes inside folder [__Project2_jupyter_notes](https://github.com/Data-Semi/DataStructure-Project2-Show-Me-the-Data-Structures/tree/main/__Project2_jupyter_notes).  
-Code solutions is in a separate file like "problem_1.py" which include at least 3 test cases for each solution.  
+The description of 6 problems is included in each jupyter notes inside the folder [__Project2_jupyter_notes](https://github.com/Data-Semi/DataStructure-Project2-Show-Me-the-Data-Structures/tree/main/__Project2_jupyter_notes).  
+Code solutions are in a separate file like "problem_1.py" which includes at least 3 test cases for each solution.  
 For each test case, I wrote the function call with the input to test and print it to the console.
 At least 2 of these are edge cases, testing inputs such as null values, empty inputs, unusually large values, etc.  
-An explanation for each question is in a markdown file like "explanation_1.md" which explanes why did I use that data structure and efficiency (time and space) of your solution.
+An explanation for each question is in a markdown file like "explanation_1.md" which explaines why did I use that data structure and efficiency (time and space) of your solution.
 
 Note: Time complexity for reading the input will not be considered in the overall complexity of the solution.
 
@@ -38,10 +38,12 @@ Note: Time complexity for reading the input will not be considered in the overal
 This folder is for reference. includes jupyter notebooks of the solutions.
 
 [python_files_from_notes](https://github.com/Data-Semi/DataStructure-Project2-Show-Me-the-Data-Structures/tree/main/python_files_from_notes)  
-This folder is for reference. It includes files that downloaded by jupyter notes above.
+This folder is for reference. It includes files downloaded by jupyter notes above.
 
 [testdir](https://github.com/Data-Semi/DataStructure-Project2-Show-Me-the-Data-Structures/tree/main/testdir)  
-It is needed for run prblem_2.py which has solution code　of File Recursion problem.
+It is needed to run prblem_2.py which has solutions code of the "File Recursion" problem.
 
+### Special thanks
+Thanks to Udacity's mentors who helped me improve my coding and analysis skills.
 
 

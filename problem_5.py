@@ -77,5 +77,6 @@ def main():
     bl2.appendBlock(None)
     bl2.appendBlock(None)
     print(bl2.toList())  # empty block chain
+    
 if __name__ == "__main__":
     main()

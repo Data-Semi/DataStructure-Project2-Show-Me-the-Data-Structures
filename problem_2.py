@@ -22,7 +22,7 @@ def find_files(suffix, path):
        a list of paths
     """
     #Base condition
-    if os.path.exists(path):  # if the path is exists
+    if os.path.isdir(path):  # if the path is exists
         if os.listdir(path) == []:  # inside the path is empty
             return None
     else:  # if the path is not exists
@@ -48,37 +48,41 @@ def test_function(func_return,expected_result):
         print("fail")
         print("The function returned: ",func_return)
 
-#Test case 1, find *.c files
-test_c = find_files(".c","./testdir")
-answer_c =['./testdir/subdir1/a.c',
- './testdir/subdir3/subsubdir1/b.c',
- './testdir/subdir5/a.c',
- './testdir/t1.c']
-test_function(test_c, answer_c)
+def main():
+    #Test case 1, find *.c files
+    test_c = find_files(".c","./testdir")
+    answer_c =['./testdir/subdir1/a.c',
+    './testdir/subdir3/subsubdir1/b.c',
+    './testdir/subdir5/a.c',
+    './testdir/t1.c']
+    test_function(test_c, answer_c)
 
-#Test case 2, find *.h files
-test_h = find_files(".h","./testdir")
-answer_h =['./testdir/subdir1/a.h',
- './testdir/subdir3/subsubdir1/b.h',
- './testdir/subdir5/a.h',
- './testdir/t1.h']
-test_function(test_h, answer_h)
+    #Test case 2, find *.h files
+    test_h = find_files(".h","./testdir")
+    answer_h =['./testdir/subdir1/a.h',
+    './testdir/subdir3/subsubdir1/b.h',
+    './testdir/subdir5/a.h',
+    './testdir/t1.h']
+    test_function(test_h, answer_h)
 
-#Test case 3, edge case, list all files inside the derectory
-test_all = find_files("","./testdir")
-answer_all = ['./testdir/subdir1/a.c',
- './testdir/subdir1/a.h',
- './testdir/subdir2/.gitkeep',
- './testdir/subdir3/subsubdir1/b.c',
- './testdir/subdir3/subsubdir1/b.h',
- './testdir/subdir4/.gitkeep',
- './testdir/subdir5/a.c',
- './testdir/subdir5/a.h',
- './testdir/t1.c',
- './testdir/t1.h']
-test_function(test_all, answer_all)
+    #Test case 3, edge case, list all files inside the directory
+    test_all = find_files("","./testdir")
+    answer_all = ['./testdir/subdir1/a.c',
+    './testdir/subdir1/a.h',
+    './testdir/subdir2/.gitkeep',
+    './testdir/subdir3/subsubdir1/b.c',
+    './testdir/subdir3/subsubdir1/b.h',
+    './testdir/subdir4/.gitkeep',
+    './testdir/subdir5/a.c',
+    './testdir/subdir5/a.h',
+    './testdir/t1.c',
+    './testdir/t1.h']
+    test_function(test_all, answer_all)
 
-#Test case 4, edge case, there is no such directory
-test_None = find_files("","")
-answer_None = None
-test_function(test_None, answer_None)
+    #Test case 4, edge case, there is no such directory
+    test_None = find_files("","")
+    answer_None = None
+    test_function(test_None, answer_None)
+
+if __name__ == "__main__":
+    main()

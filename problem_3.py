@@ -163,14 +163,18 @@ def test_function(string):
         print("tree:", tree)
         print("After decode:", decoded_data)
 
-#Test case 1, edge case: the input string has only 1 type of letter
-test_function("aaaa")  
+def main():
+    #Test case 1, edge case: the input string has only 1 type of letter
+    test_function("aaaa")  
 
-#Test case 2, edge case: the input string includes no letter
-test_function("")
+    #Test case 2, edge case: the input string includes no letter
+    test_function("")
 
-#Test case 3, edge case: the input string includes continuously duplicated letter 
-test_function("a bb ccc dddd eeee")
+    #Test case 3, edge case: the input string includes continuously duplicated letter 
+    test_function("a bb ccc dddd eeee")
 
-#Test case 4, original problem's example string
-test_function("The bird is the word")
+    #Test case 4, original problem's example string
+    test_function("The bird is the word")
+    
+if __name__ == "__main__":
+    main()

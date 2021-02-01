@@ -18,8 +18,6 @@ All operation take O(1) and a for-loop inside `is_user_in_group()` enumelates su
 Therefore, The total time complexity is O(n).
 
 ## Space complexity  
-All methods inside class `Group` have space complexity O(1).  
-In method `is_user_in_group`, the recursion operation has space complexity O(n), other operations have O(1). Thus, this method's space complexity is O(n).  
-In method `print_group_structure`, the recursion operation has space complexity O(n), other operations have O(1). Thus, this method's space complexity is O(n).  
-In method `test_function`, other of mentioned operations above have O(1). Thus, this method's space complexity is O(n).  
-In the method `main`, we do not have any loop operation and other of mentioned operations above have O(1). Therefore, this program has space complexity O(n).
+`Group`: As a class, it saves all the elements we insert in lists `groups`, `users`. Hence, it has a Space Complexity of O(2n).
+
+`is_user_in_group`: The function only access the list and return a single value regardless of the size of the list, hence it is constant in nature and hence it is O(1).

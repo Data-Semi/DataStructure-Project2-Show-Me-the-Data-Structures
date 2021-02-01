@@ -16,6 +16,6 @@ All operation takes O(1) and a for-loop inside `find_files(suffix, path)` enumer
 Therefore, The total time complexity is O(n).
 
 ## Space complexity  
-The method `os.listdir(path)` has space complexity O(n), and the loop operation `for sub_path in dir_list:` has O(n), other operations have O(1). Thus, this program's space complexity is O(n).  
-In method `test_function`, other of mentioned operations above have O(1). Thus, this method's space complexity is O(n).  
-In the method `main`, we do not have any loop operation and other of mentioned operations above have O(1). Therefore, this program has space complexity O(n).
+
+`find_files(suffix, path)`: It saves all the file path strings we insert in `answer` list which has a Space Complexity of O(n). It is also internally having fixed number of variables, and the sizes of the variables are independent of the size of the `answer` list, hence it is constant in nature. Therefore, this method has a Space Complexity of O(n).
+

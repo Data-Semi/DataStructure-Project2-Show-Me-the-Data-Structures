@@ -19,14 +19,13 @@ I used the method `sys.getsizeof()` to calculate storage size. And, we can see t
 The returned size from `sys.getsizeof()` includes not only the size of data itself, but also other information data in python. i.e. `sys.getsizeof(a_great_sentence))` returns 69 bytes instead of 38 bytes. The sentense `sys.getsizeof(int(encoded_data, base=2)))` returns 36bytes instead of 18bytes.   
 
 ## Space complexity  
-All methods inside class `Node` and  `Tree` have space complexity O(1).  
-In method `huffman_decoding_char`, the recursion operation has space complexity O(n), other operations have O(1). Thus, this method's space complexity is O(n).  
-In method `huffman_decoding`, a while loop has space complexity O(n), other operations have O(1).
-In method `huffman_code_dict`, the recursion operation has space complexity O(n), other operations have O(1). Thus, this method's space complexity is O(n).  
-In method `huffman_encoding` has 3 loop operations, and all of them have space complexity O(n). The operation `heapq.heapify`, `heappop`, `heappush` has space complexity O(n). other operations have O(1). Thus, this method's space complexity is O(n).  
-Therefore, This program's space complexity is O(n).  
-In method `test_function`, other of mentioned operations above have O(1). Thus, this method's space complexity is O(n).  
-In the method `main`, we do not have any loop operation and other of mentioned operations above have O(1). Therefore, this program has space complexity O(n).
 
- 
+Class `Node` and Class `Tree`: Internally having fixed number of variables constant in nature, hence the Space Complexity is O(1).  
 
+`huffman_decoding_char`: It saves remained huffman code strings in `remain_code_data` list which has a Space Complexity of O(n). It is also internally having fixed number of variables, and the sizes of the variables are independent of the size of the `remain_code_data` list, hence it is constant in nature. Therefore, this method has a Space Complexity of O(n).  
+
+`huffman_decoding`: the function only access the `code_data` list and return a single value regardless of the size of the `code_data`, hence it is constant in nature and hence it is O(1).  
+
+`huffman_code_dict`: It saves all the elements we insert in a dictionary `code_dict` which has a Space Complexity of O(n). It is also internally having fixed number of variables, and the sizes of the variables are independent of the size of the `code_dict` list, hence it is constant in nature. Therefore, this method has a Space Complexity of O(n).  
+
+`huffman_encoding`: The variables `freq`, `pq`, `encoded_data`, `huffmanCode` save data and the data sizes are depend on inputted string size. Thus, every one of the variables has a Space Complexity of O(n). It is also internally having fixed number of variables, and the sizes of the variables are independent of the size of the inputted string size, hence it is constant in nature. Therefore, this method has a Space Complexity of O(4n).

@@ -20,8 +20,11 @@ All operations takes O(1) time.
 Therefor, The total time complexity is O(1).
 
 ## Space complextity  
-In method `get(self, key)`, `self.cashe` has space complexity O(n), `key` has O(1), `value` has O(1). Thus, this method's space complexity is O(n).  
-in method `set(self, key, value)`, the space complexity of `len(self.cashe)` is O(n), other operations is O(1). Thus, this method's space complexity is O(n).  
-In method `test_function`, other of mentioned operations above have O(1). Thus, this method's space complexity is O(n).  
-In the method `main`, we do not have any loop operation and other of mentioned operations above have O(1). Therefore, this program has space complexity O(n). 
+
+`get(self, key)`: the function only access the list and return a single value regardless of the size of the cache, hence it is constant in nature and hence it is O(1).  
+
+`set(self, key, value)`: the function set is also, internally having fixed number of variables, and the sizes of the variables are also independent of the size of the cache, hence it is also constant in nature and hence the Space Complexity for the function is O(1).  
+
+`LRU_Cache`: As a class, it saves all the elements we insert in a dictionary and hence, it has a Space Complexity of O(n).
+
 

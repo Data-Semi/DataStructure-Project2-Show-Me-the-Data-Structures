@@ -14,7 +14,7 @@ Every operation in the program has time complexity O(1).
 Therefore, the program's time complexity is O(1).
 
 ## Space complexity  
-In method `calc_hash` of the class `Block`, operation `json.dumps`, `json_text.encode`, `sha.update`, `sha.hexdigest` has space complexity O(n), other operations has O(1). Thus, this method's space complexity is O(n).  
-In the class `BlockChain`, the method `toList` space complexity O(n) because it has a loop inside, other methods have space complexity O(1).  
-In method `test_function`, other of mentioned operations above have O(1). Thus, this method's space complexity is O(n).  
-In the method `main`, we do not have any loop operation and other of mentioned operations above have O(1). Therefore, this program has space complexity O(n).
+
+`Block`, `BlockChain`: As a class,it is internally having fixed number of variables constant in nature, hence the Space Complexity is O(1).  
+
+The method `toList(self)` in `BlockChain`: It is inserting elements to a list and the size of the list depends on the inputted tree size. Thus, this method's space complexity is O(n).  

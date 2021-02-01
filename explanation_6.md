@@ -15,15 +15,15 @@ Both of the method `union()` and `intersection()` has time compexity O(n^2).
 Therefore, This program has time complexity O(n^2 + n).  
 
 ## Space complexity  
-All methods inside class `Node` have space complexity O(1).  
-The  method `__str__`, `to_list`, `append`, `append_node`, `addNode_acceding_order`, `size` of the class `LinkedList`, a loop has space complexity O(n), other operations has O(1). Thus, this method's space complexity is O(n).  
+The class `Node`,`LinkedList` have space complexity O(1).  
 
-In method `union`, there are 2 loops nested. The nested loops have space complexity O(n^2), and method `append_node` is inside the deepest loop. Because the method `append_node` has space complexity O(n), this method `union` has space complexity(n^3). 
+`to_list(self)` in the class `LinkedList`: It is inserting elements to a list and the size of the list depends on the input size. Thus, this method's space complexity is O(n).  
 
-In method `intersection`, there are 2 loops nested. The nested loops have space complexity O(n^2), and method `append` is inside the deepest loop. Because the method `append` has space complexity O(n), this method `intersection` has space complexity(n^3).  
+`__str__(self)` in the class `LinkedList`: It is saving elements to a string and the string size depends on the input size. Thus, this method's space complexity is O(n).
 
-In method `test_function`, other of method `to_list` has O(1). Because method `to_list` has space complexity O(n), this method's space complexity is O(n).  
+Other methods in the class `LinkedList` are not saving data which depends on input. Thus, any of these methods' Space Complexity is O(n).
 
-In the method `main`, we do not have any loop operation. The code line which uses method `union` as the input of the `test_function` has O(n^4) because of method `union` has O(n^3) and method `test_function` has O(n). With the same logic, the code line which uses method `intersection` as the input of the `test_function` has O(n^4) because of method `intersection` has O(n^3) and method `test_function` has O(n). Other operations have O(1).  
+`union(llist_1, llist_2)`: It is inserting elements to `union_list`, but it is only access the inputted lists and not saving any extra data. Therefore, this method's space complexity is O(1).  
 
-Therefore, this program has space complexity O(n^4).
+`intersection(llist_1, llist_2)`: It is inserting elements to `intersection_list`, but it is only access the inputted lists and not saving any extra data. Therefore, this method's space complexity is O(1). 
+

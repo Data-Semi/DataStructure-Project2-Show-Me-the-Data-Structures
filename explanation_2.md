@@ -17,5 +17,6 @@ Therefore, The total time complexity is O(n).
 
 ## Space complexity  
 
-`find_files(suffix, path)`: It saves all the file path strings we insert in `answer` list which has a Space Complexity of O(n). It is also internally having fixed number of variables, and the sizes of the variables are independent of the size of the `answer` list, hence it is constant in nature. Therefore, this method has a Space Complexity of O(n).
+`find_files(suffix, path)`: It saves all the file path strings we insert in `answer` list which has a Space Complexity of O(n). It is also internally having fixed number of variables, and the sizes of the variables are independent of the size of the `answer` list, hence it is constant in nature.  
+The space complexity depends on how many files with our desired extension we encounter in our route. In the worst case scenario all directories have files with the given extension. If one of these directories has n of such files, again we can say that in the worst case scenario the space complexity is O(mxn) where m is the number of directories.
 

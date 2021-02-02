@@ -44,6 +44,9 @@ This folder is for reference. It includes files downloaded by jupyter notes abov
 It is needed to run prblem_2.py which has solutions code of the "File Recursion" problem.
 
 ### Special thanks
-Thanks to Udacity's mentors who helped me improve my coding and analysis skills.
+Thanks to Udacity's mentors who helped me improve my coding and analysis skills.  
+
+### Environment
+This program requires Python3.7~ , because it uses the data type ordinary Dictionary as ordered Dictionary.
 
 

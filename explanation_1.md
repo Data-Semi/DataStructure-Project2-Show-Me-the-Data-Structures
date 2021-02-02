@@ -25,6 +25,6 @@ Therefor, The total time complexity is O(1).
 
 `set(self, key, value)`: the function set is also, internally having fixed number of variables, and the sizes of the variables are also independent of the size of the cache, hence it is also constant in nature and hence the Space Complexity for the function is O(1).  
 
-`LRU_Cache`: As a class, it saves all the elements we insert in a dictionary and hence, it has a Space Complexity of O(n).
+`LRU_Cache`: As a class, it saves all the elements we insert in a dictionary and hence, it has a Space Complexity of O(n). Regardless of the two extra nodes to keep track of the head and of the tail of our LRU, and of a series of pointers, is O(m) at worst, where m is the maximum capaciy of the LRU.
 
 

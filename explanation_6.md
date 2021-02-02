@@ -23,7 +23,7 @@ The class `Node`,`LinkedList` have space complexity O(1).
 
 Other methods in the class `LinkedList` are not saving data which depends on input. Thus, any of these methods' Space Complexity is O(n).
 
-`union(llist_1, llist_2)`: It is inserting elements to `union_list`, but it is only access the inputted lists and not saving any extra data. Therefore, this method's space complexity is O(1).  
+`union(llist_1, llist_2)`: It is inserting elements to `union_list`, the union linked list can be as big as the smallest of the two linked lists. This means, in any case the space complexity is O(sum lenght of the two linked lists). Therefore, this method's space complexity is O(n).
 
-`intersection(llist_1, llist_2)`: It is inserting elements to `intersection_list`, but it is only access the inputted lists and not saving any extra data. Therefore, this method's space complexity is O(1). 
+`intersection(llist_1, llist_2)`: It is inserting elements to `intersection_list`,the intersection linked list can be as big as the smallest of the two linked lists. This means, in any case the space complexity is O(minimum lenght between the two linked lists). Therefore, this method's space complexity is O(n).
 

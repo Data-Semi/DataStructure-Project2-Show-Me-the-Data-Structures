@@ -18,6 +18,6 @@ All operation take O(1) and a for-loop inside `is_user_in_group()` enumelates su
 Therefore, The total time complexity is O(n).
 
 ## Space complexity  
-`Group`: As a class, it saves all the elements we insert in lists `groups`, `users`. Hence, it has a Space Complexity of O(2n).
+`Group`: As a class, it saves all the elements we insert in lists `groups`, `users`. We have to store all groups and all users. Therefore the space complexity is equal to O(num_groups x max_num_users_per_group).
 
 `is_user_in_group`: The function only access the list and return a single value regardless of the size of the list, hence it is constant in nature and hence it is O(1).
